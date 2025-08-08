@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Newsreader Agency</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1581091012184-5c2fdb2d3c4e') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .category-card {
+            transition: transform 0.3s ease;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header & Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Pro Newsreader Agency</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#news">Top News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Trusted News, Delivered Fast</h1>
+        <p class="lead">Your source for reliable and timely news coverage.</p>
+        <a href="#news" class="btn btn-primary btn-lg">Read Latest News</a>
+    </div>
+</section>
+
+<!-- Top News Section -->
+<section id="news" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Top News</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Global Economic Update</h5>
+                        <p class="card-text">The latest economic trends shaping global markets this week.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1520962918287-7448c2878f65" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Breakthrough</h5>
+                        <p class="card-text">New AI technology is transforming industries at lightning speed.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Sports Highlights</h5>
+                        <p class="card-text">Catch up on the biggest moments from the sports world.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section id="categories" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Categories</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card category-card shadow-sm text-center p-3">
+                    <h5>Politics</h5>
+                    <p>Breaking news from the political world.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card category-card shadow-sm text-center p-3">
+                    <h5>Technology</h5>
+                    <p>Innovations and tech trends shaping the future.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card category-card shadow-sm text-center p-3">
+                    <h5>Sports</h5>
+                    <p>Latest scores, matches, and sports events.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card category-card shadow-sm text-center p-3">
+                    <h5>Entertainment</h5>
+                    <p>Celebrity news and entertainment updates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Pro Newsreader Agency | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
