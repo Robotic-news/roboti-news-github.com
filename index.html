@@ -1,202 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-<meta name="google-site-verification" content="Fa8LYX9fH2LZB7r39f80rM21mrfUYp2X1qLMTfQFyKo" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robotic News</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1581091012184-5c2fdb2d3c4e') center/cover no-repeat;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        .category-card {
-            transition: transform 0.3s ease;
-        }
-        .category-card:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background: #222;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Robotica News - LinearLEAD</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+body { background-color: #f4f4f4; font-family: 'Roboto', sans-serif; }
+header { background: url('https://assilineari.it/wp-content/uploads/2023/05/robot-lineare.jpg') center/cover no-repeat; height: 60vh; color: white; display: flex; align-items: center; justify-content: center; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
+.section-title { margin-top: 60px; font-weight: 700; }
+.news-card img { height: 200px; object-fit: cover; }
+a.section-link { font-weight: 600; display: inline-block; margin-top: 10px; }
+</style>
 </head>
 <body>
 
-<!-- Header & Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Robotic News</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#news">Top News</a></li>
-                <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-        <h1>Trusted News, Delivered Fast</h1>
-        <p class="lead">Your source for reliable and timely news coverage.</p>
-        <a href="#news" class="btn btn-primary btn-lg">Read Latest News</a>
-    </div>
+<header>
+<h1 class="display-3 fw-bold">Robotica News • LinearLEAD</h1>
+</header>
+
+
+<div class="container my-5">
+
+
+<!-- Sezione 1: Overview -->
+<section id="overview">
+<h2 class="section-title">Ultime dal mondo dei pallettizzatori LinearLEAD</h2>
+<p>I pallettizzatori LinearLEAD stanno rivoluzionando l’automazione industriale grazie a soluzioni modulari, veloci e completamente adattabili ai processi produttivi moderni.</p>
+<a class="section-link" href="https://assilineari.it/prodotti/pallettizzatori/" target="_blank">Scopri di più sui pallettizzatori LinearLEAD →</a>
 </section>
 
-<!-- Top News Section -->
-<section id="news" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Top News</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" class="card-img-top" alt="News">
-                    <div class="card-body">
-                        <h5 class="card-title">Global Economic Update</h5>
-                        <p class="card-text">The latest economic trends shaping global markets this week.</p>
-                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1520962918287-7448c2878f65" class="card-img-top" alt="News">
-                    <div class="card-body">
-                        <h5 class="card-title">Tech Breakthrough</h5>
-                        <p class="card-text">New AI technology is transforming industries at lightning speed.</p>
-                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" class="card-img-top" alt="News">
-                    <div class="card-body">
-                        <h5 class="card-title">Sports Highlights</h5>
-                        <p class="card-text">Catch up on the biggest moments from the sports world.</p>
-                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<!-- Cards News -->
+<div class="row mt-4">
+<div class="col-md-4">
+<div class="card news-card shadow-sm">
+<img src="https://assilineari.it/wp-content/uploads/2023/05/pallettizzatore-cartesiano.jpg" class="card-img-top" alt="Pallettizzatore Cartesiano" />
+<div class="card-body">
+<h5 class="card-title">Pallettizzatori Cartesiani</h5>
+<p class="card-text">Soluzioni robuste e precise per linee ad alta ripetibilità. I sistemi cartesiani LinearLEAD garantiscono efficienza e minimo mantenimento.</p>
+<a href="https://assilineari.it/pallettizzatore-automatico-nelle-linee-di-produzione/" target="_blank" class="btn btn-primary">Approfondisci</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card news-card shadow-sm">
+<img src="https://assilineari.it/wp-content/uploads/2023/05/pallettizzazione-automatica.jpg" class="card-img-top" alt="Pallettizzazione Automatica" />
+<div class="card-body">
+<h5 class="card-title">Pallettizzazione Automatica</h5>
+<p class="card-text">Le soluzioni automatiche LinearLEAD riducono tempi di ciclo e errori, migliorando la qualità del pallet e la sicurezza dell’operatore.</p>
+<a href="https://assilineari.it" target="_blank" class="btn btn-primary">Scopri come funziona</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card news-card shadow-sm">
+<img src="https://assilineari.it/wp-content/uploads/2023/05/robot-industriale.jpg" class="card-img-top" alt="Robot Industriale" />
+<div class="card-body">
+<h5 class="card-title">Robotica Integrata</h5>
+<p class="card-text">LinearLEAD integra robot collaborativi e antropomorfi per creare soluzioni su misura, adatte a ogni settore produttivo.</p>
+<a href="https://assilineari.it/prodotti/" target="_blank" class="btn btn-primary">Vai ai prodotti</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Sezione 2: Innovazione -->
+<section id="innovazione" class="mt-5">
+<h2 class="section-title">Innovazioni nei Pallettizzatori LinearLEAD</h2>
+<p>Le nuove generazioni di pallettizzatori includono funzioni IoT, diagnosi intelligente e moduli espandibili per applicazioni future.</p>
+<a class="section-link" href="https://assi-lineari.tumblr.com/post/716298084365320192/soluzioni-con-pallettizzatore-efficienza-nelle" target="_blank">Richiedi informazioni sulle innovazioni LinearLEAD →</a>
 </section>
 
-<!-- Categories Section -->
-<section id="categories" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Categories</h2>
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="card category-card shadow-sm text-center p-3">
-                    <h5>Politics</h5>
-                    <p>Breaking news from the political world.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card category-card shadow-sm text-center p-3">
-                    <h5>Technology</h5>
-                    <p>Innovations and tech trends shaping the future.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card category-card shadow-sm text-center p-3">
-                    <h5>Sports</h5>
-                    <p>Latest scores, matches, and sports events.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card category-card shadow-sm text-center p-3">
-                    <h5>Entertainment</h5>
-                    <p>Celebrity news and entertainment updates.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Categories Section -->
-<section id="Related Links" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Related Links</h2>
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="card category-card shadow-sm text-center p-3">
-                    <h5>Quale pallettizzatore offre maggiore solidità?</h5>
-                    <p><a href="https://assilineari.it/prodotti/pallettizzatore">https://assilineari.it/prodotti/pallettizzatore</a></p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card category-card shadow-sm text-center p-3">
-                    <h5>Quali sono le tipologie di pallettizzatore robotizzato?</h5>
-                    <p><a href="https://assilineari.it/pallettizzatore-automatico-nelle-linee-di-produzione">https://assilineari.it/pallettizzatore-automatico-nelle-linee-di-produzione</a></p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card category-card shadow-sm text-center p-3">
-                    <h5>Le tipologie di pinze di pallettizzazione</h5>
-                    <p><a href="https://assilineari.it/pinze-per-robot/">https://assilineari.it/pinze-per-robot/</a></p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="Valuable category tips">
-                    <h5>Soluzioni efficenti con pallettizzatore</h5>
-                    <p><a href="https://assi-lineari.tumblr.com/post/716298084365320192/soluzioni-con-pallettizzatore-efficienza-nelle">https://assi-lineari.tumblr.com/post/716298084365320192/soluzioni-con-pallettizzatore-efficienza-nelle</a></p>
-                    </div>
-                    </div>
-                    </div>
-        <!-- Contact Section -->
-<section id="contact" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Contact Us</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
+
+<!-- Sezione 3: Case Study -->
+<section id="case-study" class="mt-5">
+<h2 class="section-title">Case Study: Automazione di Linea</h2>
+<p>Un’azienda alimentare italiana ha incrementato del 35% la produttività con un pallettizzatore cartesiano LinearLEAD dotato di pinza custom e visione artificiale.</p>
+<a class="section-link" href="https://myroboticworld.wordpress.com/2023/04/15/scopri-come-utilizzare-un-pallettizzatore-al-meglio-con-questa-guida-completa" target="_blank">Vedi altri case study →</a>
 </section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2025 Pro Newsreader Agency | All Rights Reserved</p>
-</footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Sezione 4: Tecnologie -->
+<section id="tecnologie" class="mt-5">
+<h2 class="section-title">Tecnologie Utilizzate</h2>
+<ul>
+<li>Assi lineari ad alta precisione</li>
+<li>Pinze modulari per sacchi e scatole</li>
+<li>Sistemi intelligenti di ottimizzazione pallet</li>
+<li>Software di controllo remoto e diagnostica</li>
+<li>Robot collaborativi per applicazioni miste</li>
+</ul>
+<a class="section-link" href="https://start.me/p/OwpKnM/efficienza-precisione-e-automazione-dentro-il-mo" target="_blank">Esplora la tecnologia LinearLEAD →</a>
+</section>
+
+
+<!-- Sezione 5: Contatti -->
+<section id="contatti" class="mt-5 mb-5">
+<h2 class="section-title">Contatta LinearLEAD</h2>
+<p>Per approfondimenti su pallettizzatori, automazione o soluzioni custom, visita il sito o richiedi una consulenza diretta.</p>
+<a href="https://www.youtube.com/post/UgkxIKFyqvfxyH9ejKYNXXiWQFOTogYs_zwH" target="_blank" class="btn btn-primary">Visita LinearLEAD</a>
+</section>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
